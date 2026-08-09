@@ -31,7 +31,7 @@ cuentas sentimental."
 <img src="{{ page.cover | relative_url }}" alt="{{ page.title }} cover" style="max-width: 180px; float: right; margin-left: 20px; border: 1px solid #D7CCC8;">
 
 **Año de publicación:** {{ page.year }}  
-**Editorial:** Renacimiento  
+**Editorial:** Renacimiento, Madrid  
 
 ---
 
