@@ -5,9 +5,12 @@ url: "https://moarak.github.io"  # Update to "https://<your-username>.github.io"
 baseurl: "/zac-archive-demo" # Set to "/<repo-name>" if deploying to a project page (e.g., "/my-library")
 
 # Theme Settings
-theme: "just-the-docs"
+#theme: "just-the-docs"
 # Note: When deploying to GitHub Pages, you can use:
-# remote_theme: "just-the-docs/just-the-docs"
+remote_theme: "just-the-docs/just-the-docs"
+
+plugins:
+  - jekyll-remote-theme
 
 # Just the Docs UI Configuration
 search_enabled: true
