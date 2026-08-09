@@ -1,0 +1,33 @@
+# Site Settings
+title: "Zoila Aurora Cáceres"
+description: "Archivo digital de las obras de Zoila Aurora Cáceres (1872-1958)."
+url: "https://moarak.github.io"  # Update to "https://<your-username>.github.io" when deployed
+baseurl: "/zac-archive-demo" # Set to "/<repo-name>" if deploying to a project page (e.g., "/my-library")
+
+# Theme Settings
+theme: "just-the-docs"
+# Note: When deploying to GitHub Pages, you can use:
+# remote_theme: "just-the-docs/just-the-docs"
+
+# Just the Docs UI Configuration
+search_enabled: true
+search:
+  heading_level: 2           # Includes h2 headings in search results
+
+
+# Header Auxiliary Links (Top Right)
+aux_links:
+  "GitHub Repo": "https://github.com/moarak/zac-archive-demo"
+
+# Footer Notice
+footer_content: "Alojado en GitHub Pages."
+
+# Customization Settings
+color_scheme: "light"        # Default base scheme before custom SCSS overrides
+
+# Exclusions from Jekyll build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
