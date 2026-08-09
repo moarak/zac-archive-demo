@@ -1,0 +1,66 @@
+@use "sass:color";
+
+// --------------------------------------------------
+// Early 20th-Century Book Palette & Styles
+// --------------------------------------------------
+
+// Typography Overrides
+$body-font-family: 'Cardo', Georgia, serif;
+$heading-font-family: 'IM Fell English', Georgia, serif;
+
+// Early 20th-Century Color Palette
+$aged-paper: #FAF9F6;
+$sepia-ink:  #4A3B32;
+$muted-brown: #795548;
+$border-color: #D7CCC8;
+$classic-blue: #1B4F72;
+
+// Apply Base Page Styling
+html, body {
+  background-color: $aged-paper !important;
+  color: $sepia-ink !important;
+  font-family: $body-font-family;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+// Sidebar & Main Header Styling
+.side-bar, .site-header {
+  background-color: #F2EFE9 !important;
+  border-right: 1px solid $border-color !important;
+}
+
+// Headings & Book Titles
+h1, h2, h3, h4, h5, h6, .site-title {
+  font-family: $heading-font-family !important;
+  color: $sepia-ink !important;
+  font-weight: normal;
+}
+
+// Custom Link Styling
+a {
+  color: $classic-blue;
+  text-decoration: underline;
+  &:hover {
+    color: color.adjust($classic-blue, $lightness: -15%);
+  }
+}
+
+// Modern Navigation Cleanup (Hides technical breadcrumbs)
+.breadcrumb-nav {
+  display: none !important;
+}
+
+// Minimal Download Button Restyle
+.btn-primary {
+  background-color: transparent !important;
+  color: $classic-blue !important;
+  border: 1px solid $classic-blue !important;
+  font-family: $body-font-family !important;
+  border-radius: 0px !important; // Sharp edges like old block prints
+  box-shadow: none !important;
+  &:hover {
+    background-color: $classic-blue !important;
+    color: $aged-paper !important;
+  }
+}
