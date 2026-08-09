@@ -1,4 +1,3 @@
-@use "sass:color";
 
 // --------------------------------------------------
 // Early 20th-Century Book Palette & Styles
@@ -42,7 +41,7 @@ a {
   color: $classic-blue;
   text-decoration: underline;
   &:hover {
-    color: color.adjust($classic-blue, $lightness: -15%);
+    color: darken($classic-blue, 15%);
   }
 }
 
